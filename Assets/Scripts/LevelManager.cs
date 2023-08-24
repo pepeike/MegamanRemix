@@ -9,6 +9,7 @@ public class LevelManager : MonoBehaviour {
     public float life = 1;
     public GameObject respawn;
     public GameObject playerprefab;
+    
     GameObject playerinstance;
     public MyCamera mycamera;
 
@@ -20,7 +21,7 @@ public class LevelManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        lifebar.size = new Vector2(life * 2.17f, 0.8f);
+        
         if (!playerinstance)
         {
             CreatePlayer();

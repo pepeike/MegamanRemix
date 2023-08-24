@@ -6,11 +6,12 @@ TagManager:
   tags:
   - Damage
   - Enemy
+  - Terrain
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Play Area
   - Water
   - UI
   - 
@@ -43,6 +44,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: New Layer
+  - name: Backdrop
     uniqueID: 730976939
+    locked: 0
+  - name: Terrain
+    uniqueID: 593668149
+    locked: 0
+  - name: Play Area
+    uniqueID: 1243106669
+    locked: 0
+  - name: UI
+    uniqueID: 2722340751
     locked: 0

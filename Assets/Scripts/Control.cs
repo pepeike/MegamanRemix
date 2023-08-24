@@ -5,11 +5,12 @@ using UnityEngine;
 public class Control : MonoBehaviour
 {
     public Animator anima;
+    
     float xmov;
     public Rigidbody2D rdb;
     bool jump,doublejump;
     float jumptime, jumptimeside;
-    public ParticleSystem fire;
+    //public ParticleSystem fire;
     void Start()
     {
 
@@ -36,13 +37,13 @@ public class Control : MonoBehaviour
             jumptime = 0;
             jumptimeside = 0;
         }
-        anima.SetBool("Fire", false);
+        //anima.SetBool("Fire", false);
 
-        if (Input.GetButtonDown("Fire1"))
+        /*if (Input.GetButtonDown("Fire1"))
         {
             fire.Emit(1);
             anima.SetBool("Fire", true);
-        }
+        }*/
 
     }
    
