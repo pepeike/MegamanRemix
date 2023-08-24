@@ -7,7 +7,11 @@ LightingSettings:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: IntroSettings
+<<<<<<< Updated upstream
   serializedVersion: 3
+=======
+  serializedVersion: 4
+>>>>>>> Stashed changes
   m_GIWorkflowMode: 1
   m_EnableBakedLightmaps: 0
   m_EnableRealtimeLightmaps: 0
@@ -20,7 +24,11 @@ LightingSettings:
   m_LightmapMaxSize: 1024
   m_BakeResolution: 40
   m_Padding: 2
+<<<<<<< Updated upstream
   m_TextureCompression: 1
+=======
+  m_LightmapCompression: 3
+>>>>>>> Stashed changes
   m_AO: 0
   m_AOMaxDistance: 1
   m_CompAOExponent: 1
@@ -61,3 +69,7 @@ LightingSettings:
   m_PVRFilteringAtrousPositionSigmaDirect: 0.5
   m_PVRFilteringAtrousPositionSigmaIndirect: 2
   m_PVRFilteringAtrousPositionSigmaAO: 1
+<<<<<<< Updated upstream
+=======
+  m_PVRTiledBaking: 0
+>>>>>>> Stashed changes

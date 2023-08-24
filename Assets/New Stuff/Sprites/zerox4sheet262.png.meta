@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: 07b92b90bdeb19047badaa5ecd1f0c7e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4158476290609592548
+    second: zerox4sheet262_0
+  - first:
+      213: 3288442733298998129
+    second: zerox4sheet262_1
+  - first:
+      213: -2766811132014194901
+    second: zerox4sheet262_2
+  - first:
+      213: -6982939116249627832
+    second: zerox4sheet262_3
+  - first:
+      213: 7638070641283353899
+    second: zerox4sheet262_4
+  - first:
+      213: -8062118882244469379
+    second: zerox4sheet262_5
+  - first:
+      213: 7780883402210872978
+    second: zerox4sheet262_6
+  - first:
+      213: -1149935988951929443
+    second: zerox4sheet262_7
+  - first:
+      213: 6911298463350885422
+    second: zerox4sheet262_8
+  - first:
+      213: -7580644952041182918
+    second: zerox4sheet262_9
+  - first:
+      213: 4403894120787703333
+    second: zerox4sheet262_10
+  - first:
+      213: -592621680336276015
+    second: zerox4sheet262_11
+  - first:
+      213: 7113535332825034961
+    second: zerox4sheet262_12
+  - first:
+      213: -8267592428796459871
+    second: zerox4sheet262_13
+  - first:
+      213: 8048718880666633128
+    second: zerox4sheet262_14
+  - first:
+      213: -4507661421483898657
+    second: zerox4sheet262_15
+  - first:
+      213: -2148031417325583784
+    second: zerox4sheet262_16
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: zerox4sheet262_0
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1521
+        width: 38
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c17c453a8df1a46c0800000000000000
+      internalID: -4158476290609592548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zerox4sheet262_1
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 1519
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17b50863e35e2ad20800000000000000
+      internalID: 3288442733298998129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zerox4sheet262_2
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1236
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f82b34fef4a99d0800000000000000
+      internalID: -2766811132014194901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zerox4sheet262_3
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 1237
+        width: 43
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 843c2c7fedd971f90800000000000000
+      internalID: -6982939116249627832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zerox4sheet262_4
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 1238
+        width: 49
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2dc80fa7c0eff960800000000000000
+      internalID: 7638070641283353899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zerox4sheet262_5
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1236
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d59de67999d1090800000000000000
+      internalID: -8062118882244469379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zerox4sheet262_6
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 1235
+        width: 37
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e038bba304bfb60800000000000000
+      internalID: 7780883402210872978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zerox4sheet262_7
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 1237
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d25188f4b9a00f0800000000000000
+      internalID: -1149935988951929443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zerox4sheet262_8
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 1236
+        width: 29
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c8bb4b55dd9ef50800000000000000
+      internalID: 6911298463350885422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zerox4sheet262_9
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 1173
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a392a3184932cc690800000000000000
+      internalID: -7580644952041182918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zerox4sheet262_10
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1173
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5267bf9be56cd1d30800000000000000
+      internalID: 4403894120787703333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zerox4sheet262_11
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 1174
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d57c59b8b596c7f0800000000000000
+      internalID: -592621680336276015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zerox4sheet262_12
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1171
+        width: 43
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d0f93232ba58b260800000000000000
+      internalID: 7113535332825034961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zerox4sheet262_13
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 1172
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a4c0e55d7c934d80800000000000000
+      internalID: -8267592428796459871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zerox4sheet262_14
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 1171
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a34d139d2bc2bf60800000000000000
+      internalID: 8048718880666633128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zerox4sheet262_15
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 1171
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd848bcd1d19171c0800000000000000
+      internalID: -4507661421483898657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zerox4sheet262_16
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 1174
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8520ee38ec8a032e0800000000000000
+      internalID: -2148031417325583784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      zerox4sheet262_4: 7638070641283353899
+      zerox4sheet262_5: -8062118882244469379
+      zerox4sheet262_12: 7113535332825034961
+      zerox4sheet262_7: -1149935988951929443
+      zerox4sheet262_2: -2766811132014194901
+      zerox4sheet262_6: 7780883402210872978
+      zerox4sheet262_1: 3288442733298998129
+      zerox4sheet262_16: -2148031417325583784
+      zerox4sheet262_10: 4403894120787703333
+      zerox4sheet262_14: 8048718880666633128
+      zerox4sheet262_13: -8267592428796459871
+      zerox4sheet262_11: -592621680336276015
+      zerox4sheet262_15: -4507661421483898657
+      zerox4sheet262_3: -6982939116249627832
+      zerox4sheet262_9: -7580644952041182918
+      zerox4sheet262_0: -4158476290609592548
+      zerox4sheet262_8: 6911298463350885422
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

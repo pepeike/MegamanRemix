@@ -1,0 +1,622 @@
+fileFormatVersion: 2
+guid: c4874843443c5c645939bbd33b7f4d26
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1092304213362556357
+    second: ABATUKAM_0
+  - first:
+      213: 5409476024445362509
+    second: ABATUKAM_1
+  - first:
+      213: 5207014453620501339
+    second: ABATUKAM_2
+  - first:
+      213: 290902348173304003
+    second: ABATUKAM_3
+  - first:
+      213: -9115087559183679801
+    second: ABATUKAM_4
+  - first:
+      213: 7621810678359225485
+    second: ABATUKAM_5
+  - first:
+      213: -6058750169154035540
+    second: ABATUKAM_6
+  - first:
+      213: -5425051736842442615
+    second: ABATUKAM_7
+  - first:
+      213: 737456660078525732
+    second: ABATUKAM_8
+  - first:
+      213: -8564777245467521860
+    second: ABATUKAM_9
+  - first:
+      213: -1252294104390713025
+    second: ABATUKAM_10
+  - first:
+      213: -4359706940032165356
+    second: ABATUKAM_11
+  - first:
+      213: -1781130977439136348
+    second: ABATUKAM_12
+  - first:
+      213: -7812760116537771710
+    second: ABATUKAM_13
+  - first:
+      213: -2868071647097147619
+    second: ABATUKAM_14
+  - first:
+      213: -7145949734729194023
+    second: ABATUKAM_15
+  - first:
+      213: 720749308100234717
+    second: ABATUKAM_16
+  - first:
+      213: -5831989376721041075
+    second: ABATUKAM_17
+  - first:
+      213: -2372487326325252947
+    second: ABATUKAM_18
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ABATUKAM_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 7
+        width: 44
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd332015e4a82f00800000000000000
+      internalID: 1092304213362556357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ABATUKAM_1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 10
+        width: 39
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d41ee0a98c1521b40800000000000000
+      internalID: 5409476024445362509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ABATUKAM_2
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 10
+        width: 43
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5bef50ce08034840800000000000000
+      internalID: 5207014453620501339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ABATUKAM_3
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 10
+        width: 41
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c06237f42e790400800000000000000
+      internalID: 290902348173304003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ABATUKAM_4
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 8
+        width: 49
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ce3642a824b08180800000000000000
+      internalID: -9115087559183679801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ABATUKAM_5
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 8
+        width: 41
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8471ec0e6c16c960800000000000000
+      internalID: 7621810678359225485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ABATUKAM_6
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 8
+        width: 42
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca06cb062defaeba0800000000000000
+      internalID: -6058750169154035540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ABATUKAM_7
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 7
+        width: 44
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 988e361403856b4b0800000000000000
+      internalID: -5425051736842442615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ABATUKAM_8
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 7
+        width: 42
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42df935dce8fb3a00800000000000000
+      internalID: 737456660078525732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ABATUKAM_9
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 7
+        width: 40
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbc4f8f297cc32980800000000000000
+      internalID: -8564777245467521860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ABATUKAM_10
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 6
+        width: 36
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f31c971a525fe9ee0800000000000000
+      internalID: -1252294104390713025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ABATUKAM_11
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 0
+        width: 35
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41ad39203a53f73c0800000000000000
+      internalID: -4359706940032165356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ABATUKAM_12
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 0
+        width: 35
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a5cb4710d62847e0800000000000000
+      internalID: -1781130977439136348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ABATUKAM_13
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 0
+        width: 36
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2493d6a5110839390800000000000000
+      internalID: -7812760116537771710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ABATUKAM_14
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 0
+        width: 38
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1fa76c58009238d0800000000000000
+      internalID: -2868071647097147619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ABATUKAM_15
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 5
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d56baeb39c74dc90800000000000000
+      internalID: -7145949734729194023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ABATUKAM_16
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 7
+        width: 41
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd4c615dad900a00800000000000000
+      internalID: 720749308100234717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ABATUKAM_17
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 7
+        width: 43
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d49c0b2af8c901fa0800000000000000
+      internalID: -5831989376721041075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ABATUKAM_18
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 7
+        width: 44
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dac5440c85b331fd0800000000000000
+      internalID: -2372487326325252947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ABATUKAM_9: -8564777245467521860
+      ABATUKAM_13: -7812760116537771710
+      ABATUKAM_14: -2868071647097147619
+      ABATUKAM_5: 7621810678359225485
+      ABATUKAM_11: -4359706940032165356
+      ABATUKAM_0: 1092304213362556357
+      ABATUKAM_8: 737456660078525732
+      ABATUKAM_18: -2372487326325252947
+      ABATUKAM_7: -5425051736842442615
+      ABATUKAM_16: 720749308100234717
+      ABATUKAM_4: -9115087559183679801
+      ABATUKAM_17: -5831989376721041075
+      ABATUKAM_2: 5207014453620501339
+      ABATUKAM_3: 290902348173304003
+      ABATUKAM_1: 5409476024445362509
+      ABATUKAM_10: -1252294104390713025
+      ABATUKAM_12: -1781130977439136348
+      ABATUKAM_6: -6058750169154035540
+      ABATUKAM_15: -7145949734729194023
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
