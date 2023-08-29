@@ -17,13 +17,7 @@ public class Killbarrier : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (!modKillPos)
-        {
-            killbarrier.transform.position = defaultKillpos;
-        } else
-        {
-            killbarrier.transform.position = newKillPos;
-        }
+        
         
     }
 
@@ -31,7 +25,7 @@ public class Killbarrier : MonoBehaviour
     {
         if (collision.CompareTag("Player") || collision.CompareTag("Enemy"))
         {
-            Destroy(collision);
+            Destroy(collision.gameObject);
         }
     }
 

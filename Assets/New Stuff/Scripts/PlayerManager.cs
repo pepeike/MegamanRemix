@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
@@ -17,6 +15,20 @@ public class PlayerManager : MonoBehaviour
     private bool facingRight = true;
     bool jump, doublejump;
     float jumptime, jumptimeside;
+    private bool inControl = true;
+    float controlTime = 1f;
+    float controlTimer = 1f;
+    float dmgCooldown = 2f;
+    float dmgTimer = 2f;
+    bool invincible = false;
+
+    [SerializeField]
+    private GameObject shoot;
+    [SerializeField]
+    private GameObject projectile;
+
+    private float shotCooldown = 2f;
+    private float shotTimer;
 
     [SerializeField]
     private float rayLength;
@@ -38,7 +50,7 @@ public class PlayerManager : MonoBehaviour
 
     RaycastHit2D[][] AllRaycastHits = new RaycastHit2D[3][];
 
-    
+
 
     [SerializeField]
     private Animator anim;
@@ -56,6 +68,7 @@ public class PlayerManager : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         coll = GetComponent<CapsuleCollider2D>();
+        shotTimer = shotCooldown;
     }
 
     // Update is called once per frame
@@ -63,38 +76,30 @@ public class PlayerManager : MonoBehaviour
     {
         xmov = Input.GetAxis("Horizontal");
 
-        myRigidBody.velocity = new Vector2(xmov * speed, myRigidBody.velocity.y);
-
-        /*if (xmov > 0 && !facingRight)
+        if (inControl)
         {
-            Flip();
+            myRigidBody.velocity = new Vector2(xmov * speed, myRigidBody.velocity.y);
+        } else
+        {
+            controlTimer -= Time.deltaTime;
+            if (controlTimer < .1f)
+            {
+                inControl = true;
+                controlTimer = controlTime;
+            }
         }
-        if (xmov < 0 && facingRight)
-        {
-            Flip();
-        }*/
+        
 
         Jump();
 
-        
-
-        
-        /*if (Input.GetButtonDown("Jump") && grounded)
-        {
-            //myRigidBody.velocity = Vector3.up * jumpForce;
-            if (jumptime < 0.1f)
-            {
-                doublejump = true;
-            }
-        }*/
-        
 
         if (Input.GetButton("Jump") && grounded)
         {
             //jump = true;
             myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, 0);
             myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, jumpForce);
-        } else
+        }
+        else
         {
             /*jump = false;
             doublejump = false;
@@ -102,7 +107,30 @@ public class PlayerManager : MonoBehaviour
             jumptimeside = 0;*/
         }
 
-        
+        shotTimer -= Time.deltaTime;
+
+        if (Input.GetButton("Fire1"))
+        {
+            if (shotTimer < 0)
+            {
+                //shoot.GetComponent<Animator>().SetTrigger("Shoot");
+
+                if (!facingRight)
+                {
+                    GameObject go = (GameObject)Instantiate(projectile, shoot.transform.position, Quaternion.identity);
+                    go.GetComponent<PlayerProjectile>().projectileSpeed *= -1;
+                }
+                else
+                {
+                    GameObject go = (GameObject)Instantiate(projectile, shoot.transform.position, Quaternion.identity);
+                    go.GetComponent<PlayerProjectile>().projectileSpeed *= 1;
+                }
+
+                shotTimer = shotCooldown;
+
+            }
+        }
+
 
     }
 
@@ -111,7 +139,7 @@ public class PlayerManager : MonoBehaviour
         Reverser();
         anim.SetFloat("Velocity", Mathf.Abs(xmov));
 
-        myRigidBody.AddForce(new Vector2(xmov * 20 / (myRigidBody.velocity.magnitude + 1), 0));
+        //myRigidBody.AddForce(new Vector2(xmov * 20 / (myRigidBody.velocity.magnitude + 1), 0));
 
         float distance;
 
@@ -124,47 +152,65 @@ public class PlayerManager : MonoBehaviour
             distance = 5f;
         }
 
-        Debug.Log(distance);
+        //Debug.Log(distance);
 
         anim.SetFloat("Height", distance);
 
-        
-
-        
-
-        /*RaycastHit2D hit;
-
-        hit = Physics2D.Raycast(transform.position, Vector2.down);
-
-        
-
-        if (hit)
+        if (invincible)
         {
-            Debug.Log("Hitting");
-            anim.SetFloat("Height", hit.distance);
-            JumpRoutine(hit);
-        }
-
-        RaycastHit2D hitright;
-        hitright = Physics2D.Raycast(transform.position + Vector3.up * 0.5f, transform.right, 1);
-
-        if (hitright)
-        {
-            if (hitright.distance < 0.3f)
+            dmgTimer -= Time.deltaTime;
+            
+            if (dmgTimer < 0)
             {
-                JumpRoutineSide(hitright);
+                invincible = false;
+                dmgTimer = dmgCooldown;
             }
-        }*/
+        }
 
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Terrain"))
+
+        foreach (ContactPoint2D contactPoint in collision.contacts)
         {
-            grounded = true;
+            if (contactPoint.collider.CompareTag("Terrain"))
+            {
+                grounded = true;
+            }
+
+            if ((contactPoint.collider.CompareTag("Damage") || contactPoint.collider.CompareTag("Enemy")) && !invincible)
+            {
+                Damage(1);
+
+                inControl = false;
+
+                invincible = true;
+
+                float dir = (transform.position.x - collision.transform.position.x);
+
+                Vector2 knockback = new Vector2(dir * 5f, 5f);
+
+                Debug.Log(knockback);
+
+                //myRigidBody.velocity.Set(dir * 100f, 5f);
+                myRigidBody.AddForce(knockback, ForceMode2D.Impulse);
+
+                
+
+            }
+
+
         }
+
+
+
+
+
+
     }
+
+
 
     private void OnCollisionExit2D(Collision2D collision)
     {
@@ -174,7 +220,12 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
-    private void JumpRoutine(RaycastHit2D hit)
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+    }
+
+    /*private void JumpRoutine(RaycastHit2D hit)
     {
         if (hit.distance < .1f)
         {
@@ -204,7 +255,7 @@ public class PlayerManager : MonoBehaviour
             jumptimeside = Mathf.Lerp(jumptimeside, 0, Time.fixedDeltaTime * 10);
             myRigidBody.AddForce((hitside.normal * 50 + Vector2.up * 80) * jumptimeside);
         }
-    }
+    }*/
 
 
     private void Damage(int damage)
@@ -277,14 +328,14 @@ public class PlayerManager : MonoBehaviour
         Debug.DrawRay(RayPositionLeft, Vector2.down * rayLength, Color.red);
         Debug.DrawRay(RayPositionRight, Vector2.down * rayLength, Color.red);
 
-        
-        
+
+
 
     }
 
     private bool GroundCheck(RaycastHit2D[][] GroundHits)
     {
-        
+
 
         foreach (RaycastHit2D[] Hitlist in GroundHits)
         {
