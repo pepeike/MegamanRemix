@@ -120,7 +120,7 @@ public class PlayerManager : MonoBehaviour
                     GameObject go = (GameObject)Instantiate(projectile, shoot.transform.position, Quaternion.identity);
                     go.GetComponent<PlayerProjectile>().projectileSpeed *= -1;
                 }
-                else
+                else if (facingRight)
                 {
                     GameObject go = (GameObject)Instantiate(projectile, shoot.transform.position, Quaternion.identity);
                     go.GetComponent<PlayerProjectile>().projectileSpeed *= 1;
@@ -280,10 +280,12 @@ public class PlayerManager : MonoBehaviour
         if (xmov > 0)
         {
             transform.rotation = Quaternion.Euler(0, 0, 0);
+            facingRight = true;
         }
         if (xmov < 0)
         {
             transform.rotation = Quaternion.Euler(0, 180, 0);
+            facingRight = false;
         }
     }
 
