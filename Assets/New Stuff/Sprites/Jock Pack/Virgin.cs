@@ -11,9 +11,19 @@ public class Virgin : MonoBehaviour
     private float virginTime = 5f;
     private float timer;
 
+    private Rigidbody2D rb;
+
     private void Awake()
     {
+        rb = GetComponent<Rigidbody2D>();
         timer = virginTime;
+    }
+
+    private void Start()
+    {
+        
+
+        rb.velocity = new Vector2(virginSpeed, 0);
     }
 
 
@@ -30,13 +40,21 @@ public class Virgin : MonoBehaviour
         
 
 
-        transform.position += new Vector3(virginSpeed, 0, 0);
+        //transform.position += new Vector3(virginSpeed, 0, 0);
     }
 
 
-    private void OnCollisionEnter2D(Collision2D collision)
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(gameObject);
+        if (collision.gameObject.CompareTag("Terrain")) {
+            
+            Destroy(gameObject);
+
+        }
     }
+
+    
 
 }
