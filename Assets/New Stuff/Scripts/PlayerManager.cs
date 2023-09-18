@@ -17,7 +17,7 @@ public class PlayerManager : MonoBehaviour
     private bool facingRight = true;
     //bool jump, doublejump;
     //float jumptime, jumptimeside;
-    private bool inControl = true;
+    public bool inControl = true;
     /*float controlTime = 1f;
     float controlTimer = 1f;
     float dmgCooldown = 2f;
@@ -98,12 +98,7 @@ public class PlayerManager : MonoBehaviour
         }
         if (!inControl)
         {
-            /*controlTimer -= Time.deltaTime;
-            if (controlTimer < .1f)
-            {
-                inControl = true;
-                controlTimer = controlTime;
-            }*/
+            
 
             StartCoroutine(DamageCooldown());
 
