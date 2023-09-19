@@ -1196,7 +1196,7 @@ GameObject:
   - component: {fileID: 727435596}
   - component: {fileID: 727435600}
   m_Layer: 6
-  m_Name: Enemy Hand
+  m_Name: lefthand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1234,7 +1234,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.19146824}
+  m_Offset: {x: 0, y: -0.01614666}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1245,7 +1245,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.3829365}
+  m_Size: {x: 1, y: 1.0322933}
   m_EdgeRadius: 0
 --- !u!114 &727435597
 MonoBehaviour:
@@ -1261,6 +1261,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shockwave: {fileID: 2133036779120156167, guid: 35364b6f9d735d848a128aba5bd558aa,
     type: 3}
+  right: {fileID: 1072398449}
+  lefthandtarget: {x: 61.54, y: 10.44}
+  rb: {fileID: 727435600}
+  state: 0
 --- !u!212 &727435598
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1323,7 +1327,7 @@ Transform:
   m_GameObject: {fileID: 727435595}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 61.72, y: 12.22, z: -1.2029176}
+  m_LocalPosition: {x: 61.54, y: 12.474, z: -1.2029176}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1337,14 +1341,14 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 727435595}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 1000000
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1367,8 +1371,10 @@ GameObject:
   - component: {fileID: 1072398448}
   - component: {fileID: 1072398447}
   - component: {fileID: 1072398446}
+  - component: {fileID: 1072398449}
+  - component: {fileID: 1072398450}
   m_Layer: 0
-  m_Name: Enemy Hand2
+  m_Name: righthand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1481,12 +1487,55 @@ Transform:
   m_GameObject: {fileID: 1072398445}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 68.12, y: 12.34, z: -1.2029176}
+  m_LocalPosition: {x: 69.55, y: 12.474, z: -1.2029176}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1072398449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072398445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 513c5b35d252d464ba87cde4a2d9f5d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shockwave: {fileID: 2133036779120156167, guid: 35364b6f9d735d848a128aba5bd558aa,
+    type: 3}
+  left: {fileID: 727435597}
+  state: 0
+--- !u!50 &1072398450
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072398445}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 1
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1149247318
 GameObject:
   m_ObjectHideFlags: 0

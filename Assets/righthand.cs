@@ -2,11 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class hands : MonoBehaviour
+public class righthand : MonoBehaviour
 {
-
     public GameObject shockwave;
-    
+    public lefthand left;
+
+    public enum MonsterStates
+    {
+        Neutral,
+        Charging,
+        Grounded
+    }
+
+    public MonsterStates state = MonsterStates.Neutral;
 
 
 
@@ -33,7 +41,4 @@ public class hands : MonoBehaviour
         go1.GetComponent<shockwave>().shockSpeed = 2.0f;
         go2.GetComponent<shockwave>().shockSpeed = -2.0f;
     }
-
-    
-
 }
