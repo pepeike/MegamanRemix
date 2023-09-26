@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class LevelManager : MonoBehaviour {
 
@@ -9,39 +7,38 @@ public class LevelManager : MonoBehaviour {
     public float life = 1;
     public GameObject respawn;
     public GameObject playerprefab;
-    
+
     GameObject playerinstance;
     public MyCamera mycamera;
 
     // Use this for initialization
-    void Start () {
+    void Start() {
         instance = this;
-       
+
     }
-	
-	// Update is called once per frame
-	void Update () {
-        
-        if (!playerinstance)
-        {
+
+    // Update is called once per frame
+    void Update() {
+
+        if (!playerinstance) {
             CreatePlayer();
         }
     }
-    void CreatePlayer()
-    {
+    void CreatePlayer() {
         playerinstance = Instantiate(playerprefab, respawn.transform.position, Quaternion.identity);
-        mycamera.SetPlayer(playerinstance);
+        if (mycamera != null) {
+            mycamera.SetPlayer(playerinstance);
+        }
+
         life = 1;
     }
     /// <summary>
     /// Aplica pouco dano
     /// </summary>
-    public void LowDamage()
-    {
+    public void LowDamage() {
         life -= 0.1f;
         life = Mathf.Clamp01(life);
-        if (life <= 0.01f)
-        {
+        if (life <= 0.01f) {
             Destroy(playerinstance);
         }
     }

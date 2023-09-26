@@ -7,13 +7,21 @@ public class Jock : MonoBehaviour
     public GameObject Output;
     public GameObject Virgin;
     public Animator anim;
-    float Shootime = 5;
-    float shootimer = 5;
+    float Shootime = 3;
+    float shootimer = 3;
 
     //alterações da pep
     public GameObject target;
+    [SerializeField]
+    private JockDetection detection;
     private bool facingLeft = false;
 
+
+    private void Awake()
+    {
+        detection = GetComponentInParent<JockDetection>();
+        
+    }
 
     private void Start()
     {
@@ -22,6 +30,9 @@ public class Jock : MonoBehaviour
     private void Update()
     {
         
+        
+
+
         if (target)
         {
             Vector3 dif = target.transform.position - transform.position;
@@ -41,6 +52,14 @@ public class Jock : MonoBehaviour
 
     private void FixedUpdate()
     {
+
+        if (detection.target != null) {
+            target = detection.target;
+        } else if (detection.target == null) {
+            target = null;
+        }
+
+
         if (target)
         {
             Shootime -= Time.deltaTime;
@@ -66,19 +85,24 @@ public class Jock : MonoBehaviour
 
         
 
+        
+
 
 
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+
+        
+
+        if (collision.gameObject.CompareTag("Player Projectile"))
         {
-            target = collision.gameObject;
+            Destroy(gameObject);
         }
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    /*private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
@@ -92,7 +116,7 @@ public class Jock : MonoBehaviour
         {
             target = null;
         }
-    }
+    }*/
 
     private void Flip()
     {
@@ -103,13 +127,13 @@ public class Jock : MonoBehaviour
         facingLeft = !facingLeft;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    /*private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player Projectile"))
         {
             Destroy(gameObject);
         }
-    }
+    }*/
 
 
 }

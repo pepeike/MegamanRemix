@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Terrain
   - Player Projectile
+  - Background
+  - Interactable
   layers:
   - Default
   - TransparentFX

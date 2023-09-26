@@ -7,12 +7,12 @@ public class Killbarrier : MonoBehaviour
 
     public Killbarrier killbarrier;
 
-    private Vector3 defaultKillpos = new Vector3(33, 2, -66);
+    //private Vector3 defaultKillpos = new Vector3(33, 2, -66);
 
-    [SerializeField]
-    private bool modKillPos = false;
-    [SerializeField]
-    private Vector3 newKillPos;
+    //[SerializeField]
+    //private bool modKillPos = false;
+    //[SerializeField]
+    //private Vector3 newKillPos;
 
     // Start is called before the first frame update
     void Start()
