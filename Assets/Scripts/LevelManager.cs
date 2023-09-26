@@ -10,7 +10,7 @@ public class LevelManager : MonoBehaviour {
     public GameObject respawn;
     public GameObject playerprefab;
     
-    GameObject playerinstance;
+    public GameObject playerinstance;
     public MyCamera mycamera;
 
     // Use this for initialization

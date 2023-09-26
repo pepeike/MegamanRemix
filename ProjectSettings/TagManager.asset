@@ -9,6 +9,7 @@ TagManager:
   - Terrain
   - Player Projectile
   - Background
+  - Interactable
   layers:
   - Default
   - TransparentFX

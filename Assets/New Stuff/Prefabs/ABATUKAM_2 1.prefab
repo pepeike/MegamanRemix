@@ -136,6 +136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   myRigidBody: {fileID: 6465612126447773883}
+  inControl: 1
   shoot: {fileID: 8630236051933351270}
   projectile: {fileID: 0}
   rayLength: 1
@@ -145,6 +146,9 @@ MonoBehaviour:
     m_Bits: 72
   frontCheck: {fileID: 0}
   wallSlidingSpeed: 0
+  xWallForce: 0
+  yWallForce: 0
+  wallJumpTime: 0
   anim: {fileID: 7296269090379211731}
   jumpForce: 10
 --- !u!50 &6465612126447773883
